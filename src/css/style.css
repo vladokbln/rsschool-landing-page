@@ -39,11 +39,13 @@ body {
 	font-family: "Inter", sans-serif;
 	color: var(--text-primary);
 	line-height: 150%;
+	background-color: var(--bg-page);
 }
 input, button, textarea, select {
   font-family: inherit;
 }
 a {
+	font-weight: 600;
 	color: inherit;
 	text-decoration: none;
 	transition: 0.3s;
@@ -77,3 +79,84 @@ a:hover {
 	padding: 0 15px;
 	margin: 0 auto;
 }
+.svg-icon {
+	width: 18px;
+	height: 18px;
+	fill: var(--text-primary)
+}
+/* header */
+.header {
+	padding: 20px 0;
+}
+.header-flex {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.header-nav__list {
+	display: flex;
+}
+.header-nav__item {
+	padding: 0 20px;
+}
+.header-nav__link {
+	display: block;
+	position: relative;
+	padding-bottom: 2px;
+}
+.header-nav__link::before {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 0;
+	height: 2px;
+	transition: 0.3s;
+	background-color: var(--text-primary)
+}
+.header-nav__link:hover::before {
+	width: 100%;
+}
+.header__actions {
+	display: flex;
+	align-items: center;
+}
+.theme-switch {
+	cursor: pointer;
+	margin-right: 24px;
+}
+.theme-switch__input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+.theme-switch__list {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 3px;
+	border: 1px solid var(--border-primary);
+	border-radius: 100px;
+}
+.theme-switch__item {
+	display: flex;
+  justify-content: center;
+  align-items: center;
+	width: 36px;
+	height: 36px;
+	border-radius: 50%;
+}
+.theme-switch__light {
+	background-color: var(--text-accent);
+}
+.theme-switch__icon--sun {
+	width: 22px;
+	height: 22px;
+	fill: var(--text-inverse);
+}
+/* end header */

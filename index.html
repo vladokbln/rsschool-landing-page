@@ -5,7 +5,51 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="src/fonts/Inter/stylesheet.css">
 	<link rel="stylesheet" href="src/css/style.css">
-	<title>Home</title>
+	<title>Resourse COFFE HOUSE</title>
 </head>
-<body></body>
+<body>
+	<main class="main">
+		<header class="header">
+			<div class="container">
+				<div class="header-flex">
+					<a href="/" class="header-logo logo">
+						<img src="src/img/logo.svg" alt="Resourse COFFE HOUSE">
+					</a>
+					<nav class="header-nav">
+						<ul class="header-nav__list list-none">
+							<li class="header-nav__item"><a href="#" class="header-nav__link">Favorite coffee</a></li>
+							<li class="header-nav__item"><a href="#" class="header-nav__link">About</a></li>
+							<li class="header-nav__item"><a href="#" class="header-nav__link">Mobile app</a></li>
+							<li class="header-nav__item"><a href="#" class="header-nav__link">Contact us</a></li>
+						</ul>
+					</nav>
+					<div class="header__actions">
+						<label class="header-theme-switch theme-switch" for="theme-input">
+							<input type="checkbox" id="theme-input" class="theme-switch__input">
+							<div class="theme-switch__list">
+								<div class="theme-switch__item theme-switch__light">
+									<svg class="svg-icon theme-switch__icon theme-switch__icon--sun">
+										<use xlink:href="src/img/sprite.svg#sun"></use>
+									</svg>
+								</div>
+								<div class="theme-switch__item theme-switch__dark">
+									<svg class="svg-icon theme-switch__icon">
+										<use xlink:href="src/img/sprite.svg#moon"></use>
+									</svg>
+								</div>
+								<span class="theme-ball"></span>
+							</div>
+						</label>
+						<div class="header-catalog"><a href="#" class="header-catalog__link">
+							<span>Menu</span>
+							<svg class="svg-icon header-catalog__icon">
+								<use xlink:href="src/img/sprite.svg#cup"></use>
+							</svg>
+						</a></div>
+					</div>
+				</div>
+			</div>
+		</header>
+	</main>
+</body>
 </html>
