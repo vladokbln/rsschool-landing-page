@@ -54,6 +54,10 @@ a {
 a:hover {
 	color: var(--text-primary);
 }
+img {
+	display: block;
+	width: 100%;
+}
 .title {
 	margin-bottom: 40px;
 	font-weight: 600;
@@ -70,6 +74,10 @@ a:hover {
 	font-size: 1.5rem;
 	line-height: 125%;
 }
+.accent {
+	font-style: italic;
+	color: var(--text-accent);
+}
 .list-none {
   padding-left: 0;
   list-style: none;
@@ -83,7 +91,16 @@ a:hover {
 .svg-icon {
 	width: 18px;
 	height: 18px;
-	fill: var(--text-primary)
+	fill: var(--text-primary);
+	transition: .3s;
+}
+.btn {
+	display: block;
+	padding: 20px;
+	background-color: var(--bg-page);
+	color: var(--text-primary);
+	text-align: center;
+	border-radius: 100px;
 }
 /* header */
 .header {
@@ -193,3 +210,43 @@ a:hover {
 	transform: translateY(-50%);
 }
 /* end header */
+/* hero */
+.hero {
+	position: relative;
+	color: var(--text-inverse); 
+}
+.hero__img {
+	height: 644px;
+	border-radius: 40px;
+	overflow: hidden;
+}
+.hero__img img {
+	height: 100%;
+	object-fit: cover;
+}
+.hero-main {
+	padding: 100px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.hero-main__offer {
+	width: 100%;
+	max-width: 530px;
+}
+.hero-main__btn {
+	margin-top: 40px;
+	max-width: 200px;
+	position: relative;
+}
+.hero-btn__icon {
+	vertical-align: text-top;
+	width: 0;
+	opacity: 0;
+}
+.hero-main__btn:hover .hero-btn__icon {
+	width: 18px;
+	opacity: 1;
+	margin-left: 5px;
+}
+/* end hero */
