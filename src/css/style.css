@@ -46,6 +46,7 @@ input, button, textarea, select {
 }
 a {
 	font-weight: 600;
+	line-height: 150%;
 	color: inherit;
 	text-decoration: none;
 	transition: 0.3s;
@@ -102,7 +103,7 @@ a:hover {
 .header-nav__link {
 	display: block;
 	position: relative;
-	padding-bottom: 2px;
+	padding-bottom: 4px;
 }
 .header-nav__link::before {
 	content: '';
@@ -150,13 +151,45 @@ a:hover {
 	width: 36px;
 	height: 36px;
 	border-radius: 50%;
+	transition: .3s;
 }
 .theme-switch__light {
 	background-color: var(--text-accent);
+}
+.theme-switch__icon {
+	transition: .3s;
 }
 .theme-switch__icon--sun {
 	width: 22px;
 	height: 22px;
 	fill: var(--text-inverse);
+}
+.theme-switch__dark:hover {
+	background-color: var(--dark-border-primary);
+}
+.theme-switch__dark:hover .theme-switch__icon {
+	fill: var(--text-inverse)
+}
+.header-catalog__link {
+	display: block;
+  position: relative;
+  padding-bottom: 4px;
+	padding-right: 26px;
+}
+.header-catalog__link:after {
+	content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  transition: 0.3s;
+  background-color: var(--text-primary);
+}
+.header-catalog__icon {
+	position: absolute;
+	right: 0;
+	top: calc(50% - 4px);
+	transform: translateY(-50%);
 }
 /* end header */
