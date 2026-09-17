@@ -271,6 +271,9 @@ img {
 .favorite-coffee__title {
 	text-align: center;
 }
+.favorite-coffee__wrap {
+	position: relative;
+}
 .favorite-coffee__item {
 	width: 100%;
 	max-width: 480px;
@@ -289,7 +292,7 @@ img {
 }
 .favorite-coffee__nav-left, .favorite-coffee__nav-right {
 	position: absolute;
-	top: calc(50% + 4px);
+	top: calc(50% - 21px);
 	left: 4px;
 	transform: translateY(-50%);
 	line-height: 0;
