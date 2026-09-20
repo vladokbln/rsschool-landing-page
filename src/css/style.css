@@ -105,6 +105,11 @@ img {
 	text-align: center;
 	border-radius: 100px;
 }
+.btn-app {
+	padding: 11px 20px;
+	background-color: none;
+	border: 1px solid var(--border-inverse);
+}
 /* header */
 .header {
 	padding: 20px 0;
@@ -381,3 +386,46 @@ img {
 	max-height: 430px;
 }
 /* end about */
+/* download */
+.download__main {
+	display: flex;
+	align-items: center;
+}
+.download__offer {
+	padding-right: 100px;
+}
+.download__img {
+	width: 100%;
+	max-width: 630px;
+}
+.download__buttons {
+	margin-top: 40px;
+	display: flex;
+}
+.download__button {
+	width: 100%;
+	max-width: 200px;
+}
+.download__button:first-child {
+	margin-right: 20px;
+}
+.download__btn {
+	text-align: left;
+	position: relative;
+	padding-left: 64px;
+}
+.download-btn__small {
+	 font-size: 0.625rem;
+	 line-height: 140%;
+	 margin-bottom: 2px;
+}
+.svg-icon.download__icon {
+  width: 36px;
+  height: 36px;
+  padding: 2px 5px;
+	position: absolute;
+	left: 20px;
+	top: 50%;
+	transform: translateY(-50%);
+}
+/* end download */
