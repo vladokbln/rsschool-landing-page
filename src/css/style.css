@@ -107,7 +107,7 @@ img {
 }
 .btn-app {
 	padding: 11px 20px;
-	background-color: none;
+	background: none;
 	border: 1px solid var(--border-inverse);
 }
 /* header */
@@ -414,12 +414,16 @@ img {
 	position: relative;
 	padding-left: 64px;
 }
+.download__btn:hover {
+	background-color: var(--bg-container);
+	color: var(--text-inverse);
+}
 .download-btn__small {
 	 font-size: 0.625rem;
 	 line-height: 140%;
 	 margin-bottom: 2px;
 }
-.svg-icon.download__icon {
+.download__icon {
   width: 36px;
   height: 36px;
   padding: 2px 5px;
@@ -428,4 +432,88 @@ img {
 	top: 50%;
 	transform: translateY(-50%);
 }
+.download__btn:hover .download__icon {
+	fill: var(--text-inverse);
+}
 /* end download */
+/* footer */
+.footer {
+	padding: 50px 0 40px;
+}
+.footer__main {
+	padding: 100px;
+	background-color: var(--bg-container);
+	border-radius: 40px;
+	color: var(--text-inverse);
+	display: flex;
+	align-items: center;
+}
+.footer .svg-icon {
+	fill: var(--text-inverse);
+}
+.footer__item {
+	width: 100%;
+	max-width: 530px;
+}
+.footer__left {
+	margin-right: 100px;
+}
+.footer-social {
+	display: flex;
+}
+.footer-social__item {
+	margin-right: 12px;
+}
+.footer-social__item:last-child {
+	margin-right: 0;
+}
+.footer-social__link {
+	width: 60px;
+	height: 60px;
+	display: flex;
+  align-items: center;
+  justify-content: center;
+	border: 1px solid var(--border-primary);
+	padding: 18px;
+	border-radius: 50%;
+}
+.footer-social__link:hover {
+	border-color: var(--border-inverse);
+	background-color: var(--bg-page);
+}
+.footer-social__link:hover .svg-icon {
+	fill: var(--text-primary);
+}
+.footer-contact__title {
+	font-size: 1.5rem;
+}
+.footer-contact__link {
+	display: inline-block;
+	position: relative;
+}
+.footer-contact__link::after {
+	content: '';
+	width: 0;
+	height: 2px;
+	background-color: var(--text-inverse);
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	transition: .3s;
+}
+.footer-contact__link:hover::after {
+	width: 100%;
+}
+.footer-contact__link:hover {
+	color: var(--text-inverse);
+}
+.footer-contact__item {
+	margin-bottom: 20px;
+}
+.footer-contact__item:last-child {
+	margin-bottom: 0;
+}
+.footer-contact__icon {
+	margin-right: 8px;
+}
+/* end footer */
