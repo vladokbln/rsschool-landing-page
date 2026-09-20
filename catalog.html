@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="src/fonts/Inter/stylesheet.css">
+	<link rel="stylesheet" href="src/css/style.css">
+	<title>Catalog COFFE HOUSE</title>
+</head>
+<body>
+	<header class="header">
+		<div class="container">
+			<div class="header-flex">
+				<a href="/" class="header-logo logo">
+					<img src="src/img/logo.svg" alt="Resourse COFFE HOUSE">
+				</a>
+				<nav class="header-nav">
+					<ul class="header-nav__list list-none">
+						<li class="header-nav__item"><a href="#" class="header-nav__link">Favorite coffee</a></li>
+						<li class="header-nav__item"><a href="#" class="header-nav__link">About</a></li>
+						<li class="header-nav__item"><a href="#" class="header-nav__link">Mobile app</a></li>
+						<li class="header-nav__item"><a href="#" class="header-nav__link">Contact us</a></li>
+					</ul>
+				</nav>
+				<div class="header__actions">
+					<label class="header-theme-switch theme-switch" for="theme-input">
+						<input type="checkbox" id="theme-input" class="theme-switch__input">
+						<span class="theme-switch__list">
+							<span class="theme-switch__item theme-switch__light">
+								<svg class="svg-icon theme-switch__icon theme-switch__icon--sun">
+									<use xlink:href="src/img/sprite.svg#sun"></use>
+								</svg>
+							</span>
+							<span class="theme-switch__item theme-switch__dark">
+								<svg class="svg-icon theme-switch__icon theme-switch__icon--moon">
+									<use xlink:href="src/img/sprite.svg#moon"></use>
+								</svg>
+							</span>
+							<span class="theme-ball"></span>
+						</span>
+					</label>
+					<div class="header-catalog"><a href="catalog.html" class="header-catalog__link">
+						<span>Menu</span>
+						<svg class="svg-icon header-catalog__icon">
+							<use xlink:href="src/img/sprite.svg#cup"></use>
+						</svg>
+					</a></div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<main class="main">
+		<div class="container">
+			<div class="catalog-page">
+				<h1 class="h1 title catalog-page__title">Behind each of our cups hides an <span class="accent">amazing surprise</span></h1>
+				<div class="catalog-page__tabs catalog-tabs">
+					<ul class="catalog-tabs__nav catalog-nav list-none">
+						<li class="catalog-nav__item"><a href="#" class="catalog-nav__link active">Coffee <div class="catalog-nav__icon"><img  src="src/img/catalog/coffee.png" alt=""></div></a></li>
+						<li class="catalog-nav__item"><a href="#" class="catalog-nav__link">Tea <div class="catalog-nav__icon"><img src="src/img/catalog/tee.png" alt=""></div></a></li>
+						<li class="catalog-nav__item"><a href="#" class="catalog-nav__link">Dessert <div class="catalog-nav__icon"><img src="src/img/catalog/dessert.png" alt=""></div></a></li>
+					</ul>
+					<div class="catalog-tabs__content catalog-content">
+						<div class="catalog-content__grid">
+							<div class="catalog-content__item">
+								<div class="catalog-content__img"><img src="src/img/catalog/coffee/coffee-1.jpg" alt=""></div>
+								<div class="catalog-content__main">
+									<h3 class="h3 title catalog-content__name">Irish coffee</h3>
+									<p class="catalog-content__descr">Fragrant black coffee with <br> Jameson Irish whiskey and whipped milk</p>
+									<p class="catalog-content__price">$7.00</p>
+								</div>
+							</div>
+							<div class="catalog-content__item">
+								<div class="catalog-content__img"><img src="src/img/catalog/coffee/coffee-2.jpg" alt=""></div>
+								<div class="catalog-content__main">
+									<h3 class="h3 title catalog-content__name">Kahlua coffee</h3>
+									<p class="catalog-content__descr">Classic coffee with milk and Kahlua liqueur under a cap of frothed milk</p>
+									<p class="catalog-content__price">$7.00</p>
+								</div>
+							</div>
+							<div class="catalog-content__item">
+								<div class="catalog-content__img"><img src="src/img/catalog/coffee/coffee-3.jpg" alt=""></div>
+								<div class="catalog-content__main">
+									<h3 class="h3 title catalog-content__name">Honey raf</h3>
+									<p class="catalog-content__descr">Espresso with frothed milk, cream and aromatic honey</p>
+									<p class="catalog-content__price">$5.50</p>
+								</div>
+							</div>
+							<div class="catalog-content__item">
+								<div class="catalog-content__img"><img src="src/img/catalog/coffee/coffee-4.jpg" alt=""></div>
+								<div class="catalog-content__main">
+									<h3 class="h3 title catalog-content__name">Ice cappuccino</h3>
+									<p class="catalog-content__descr">Cappuccino with soft thick foam in summer version with ice</p>
+									<p class="catalog-content__price">$5.00</p>
+								</div>
+							</div>
+							<div class="catalog-content__item">
+								<div class="catalog-content__img"><img src="src/img/catalog/coffee/coffee-5.jpg" alt=""></div>
+								<div class="catalog-content__main">
+									<h3 class="h3 title catalog-content__name">Espresso</h3>
+									<p class="catalog-content__descr">Classic black coffee</p>
+									<p class="catalog-content__price">$4.50</p>
+								</div>
+							</div>
+							<div class="catalog-content__item">
+								<div class="catalog-content__img"><img src="src/img/catalog/coffee/coffee-6.jpg" alt=""></div>
+								<div class="catalog-content__main">
+									<h3 class="h3 title catalog-content__name">Latte</h3>
+									<p class="catalog-content__descr">Espresso coffee with the addition of steamed milk and dense milk <br> foam</p>
+									<p class="catalog-content__price">$5.50</p>
+								</div>
+							</div>
+							<div class="catalog-content__item">
+								<div class="catalog-content__img"><img src="src/img/catalog/coffee/coffee-7.jpg" alt=""></div>
+								<div class="catalog-content__main">
+									<h3 class="h3 title catalog-content__name">Latte macchiato</h3>
+									<p class="catalog-content__descr">Espresso with frothed milk and chocolate</p>
+									<p class="catalog-content__price">$5.50</p>
+								</div>
+							</div> 
+							<div class="catalog-content__item">
+								<div class="catalog-content__img"><img src="src/img/catalog/coffee/coffee-8.jpg" alt=""></div>
+								<div class="catalog-content__main">
+									<h3 class="h3 title catalog-content__name">Coffee with cognac</h3>
+									<p class="catalog-content__descr">Fragrant black coffee with cognac and whipped cream</p>
+									<p class="catalog-content__price">$6.50</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+		<footer class="footer">
+		<div class="container">
+			<div class="footer__main">
+				<div class="footer__item footer__left">
+					<h2 class="h2 title footer__title">Sip, Savor, Smile. <span class="accent">It’s coffee time!</span></h2>
+					<ul class="list-none footer__social footer-social">
+						<li class="footer-social__item">
+							<a href="#" class="footer-social__link">
+								<svg class="svg-icon footer-social__icon">
+									<use xlink:href="src/img/sprite.svg#twitter"></use>
+								</svg>
+							</a>
+						</li>
+						<li class="footer-social__item">
+							<a href="#" class="footer-social__link">
+								<svg class="svg-icon footer-social__icon">
+									<use xlink:href="src/img/sprite.svg#instagram"></use>
+								</svg>
+							</a>
+						</li>
+						<li class="footer-social__item">
+							<a href="#" class="footer-social__link">
+								<svg class="svg-icon footer-social__icon">
+									<use xlink:href="src/img/sprite.svg#facebook"></use>
+								</svg>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer__item footer__right">
+					<div class="footer__contact footer-contact">
+						<p class="footer-contact__title title">Contact us</p>
+						<ul class="list-none footer-contact__list">
+							<li class="footer-contact__item">
+								<a href="#" class="footer-contact__link">
+									<svg class="svg-icon footer-contact__icon">
+										<use xlink:href="src/img/sprite.svg#local "></use>
+									</svg>
+									8558 Green Rd.,  LA
+								</a>
+							</li>
+							<li class="footer-contact__item">
+								<a href="#" class="footer-contact__link">
+									<svg class="svg-icon footer-contact__icon">
+										<use xlink:href="src/img/sprite.svg#phone"></use>
+									</svg>
+									+1 (603) 555-0123
+								</a>
+							</li>
+							<li class="footer-contact__item">
+								<a href="#" class="footer-contact__link">
+									<svg class="svg-icon footer-contact__icon">
+										<use xlink:href="src/img/sprite.svg#clock"></use>
+									</svg>
+									Mon–Sat: 9:00–23:00
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>
