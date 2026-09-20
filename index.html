@@ -8,48 +8,48 @@
 	<title>Resourse COFFE HOUSE</title>
 </head>
 <body>
-	<main class="main">
-		<header class="header">
-			<div class="container">
-				<div class="header-flex">
-					<a href="/" class="header-logo logo">
-						<img src="src/img/logo.svg" alt="Resourse COFFE HOUSE">
-					</a>
-					<nav class="header-nav">
-						<ul class="header-nav__list list-none">
-							<li class="header-nav__item"><a href="#" class="header-nav__link">Favorite coffee</a></li>
-							<li class="header-nav__item"><a href="#" class="header-nav__link">About</a></li>
-							<li class="header-nav__item"><a href="#" class="header-nav__link">Mobile app</a></li>
-							<li class="header-nav__item"><a href="#" class="header-nav__link">Contact us</a></li>
-						</ul>
-					</nav>
-					<div class="header__actions">
-						<label class="header-theme-switch theme-switch" for="theme-input">
-							<input type="checkbox" id="theme-input" class="theme-switch__input">
-							<div class="theme-switch__list">
-								<div class="theme-switch__item theme-switch__light">
-									<svg class="svg-icon theme-switch__icon theme-switch__icon--sun">
-										<use xlink:href="src/img/sprite.svg#sun"></use>
-									</svg>
-								</div>
-								<div class="theme-switch__item theme-switch__dark">
-									<svg class="svg-icon theme-switch__icon theme-switch__icon--moon">
-										<use xlink:href="src/img/sprite.svg#moon"></use>
-									</svg>
-								</div>
-								<span class="theme-ball"></span>
-							</div>
-						</label>
-						<div class="header-catalog"><a href="#" class="header-catalog__link">
-							<span>Menu</span>
-							<svg class="svg-icon header-catalog__icon">
-								<use xlink:href="src/img/sprite.svg#cup"></use>
-							</svg>
-						</a></div>
-					</div>
+	<header class="header">
+		<div class="container">
+			<div class="header-flex">
+				<a href="/" class="header-logo logo">
+					<img src="src/img/logo.svg" alt="Resourse COFFE HOUSE">
+				</a>
+				<nav class="header-nav">
+					<ul class="header-nav__list list-none">
+						<li class="header-nav__item"><a href="#favorite" class="header-nav__link">Favorite coffee</a></li>
+						<li class="header-nav__item"><a href="#about" class="header-nav__link">About</a></li>
+						<li class="header-nav__item"><a href="#download" class="header-nav__link">Mobile app</a></li>
+						<li class="header-nav__item"><a href="#contacts" class="header-nav__link">Contact us</a></li>
+					</ul>
+				</nav>
+				<div class="header__actions">
+					<label class="header-theme-switch theme-switch" for="theme-input">
+						<input type="checkbox" id="theme-input" class="theme-switch__input">
+						<span class="theme-switch__list">
+							<span class="theme-switch__item theme-switch__light">
+								<svg class="svg-icon theme-switch__icon theme-switch__icon--sun">
+									<use xlink:href="src/img/sprite.svg#sun"></use>
+								</svg>
+							</span>
+							<span class="theme-switch__item theme-switch__dark">
+								<svg class="svg-icon theme-switch__icon theme-switch__icon--moon">
+									<use xlink:href="src/img/sprite.svg#moon"></use>
+								</svg>
+							</span>
+							<span class="theme-ball"></span>
+						</span>
+					</label>
+					<div class="header-catalog"><a href="catalog.html" class="header-catalog__link">
+						<span>Menu</span>
+						<svg class="svg-icon header-catalog__icon">
+							<use xlink:href="src/img/sprite.svg#cup"></use>
+						</svg>
+					</a></div>
 				</div>
 			</div>
-		</header>
+		</div>
+	</header>
+	<main class="main">
 		<section class="section section section-hero">
 			<div class="container">
 				<div class="hero">
@@ -60,7 +60,7 @@
 						<div class="hero-main__offer">
 							<h1 class="title h1 hero-main__title"><span class="accent">Enjoy</span> premium coffee at our charming cafe</h1>
 							<p class="text hero-main__text">With its inviting atmosphere and delicious coffee options, the Coffee House Resource is a popular destination for coffee lovers and those seeking a warm and inviting space to enjoy their favorite beverage.</p>
-							<a href="#" class="btn hero-main__btn hero-btn">
+							<a href="catalog.html" class="btn hero-main__btn hero-btn">
 								<span>Menu</span>
 								<svg class="svg-icon hero-btn__icon">
 									<use xlink:href="src/img/sprite.svg#cup"></use>
@@ -71,7 +71,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="section section-favorite-coffee">
+		<section class="section section-favorite-coffee" id="favorite">
 			<div class="container">
 				<div class="favorite-coffee favorite-coffee">
 					<h2 class="favorite-coffee__title title h2">Choose your <span class="accent ">favorite</span> coffee</h2>
@@ -109,7 +109,7 @@
 				</div>
 			</div>
 		</section> 
-		<section class="section section-about">
+		<section class="section section-about" id="about">
 			<div class="container">
 				<div class="about">
 					<h2 class="h2 title about__title">Resource is <span class="accent">the perfect and cozy place</span> where you can enjoy a variety of hot beverages, relax, catch up with friends, or get some work done.</h2>
@@ -134,7 +134,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="section section-download">
+		<section class="section section-download" id="download">
 			<div class="container">
 				<div class="download">
 					<div class="download__main">
@@ -168,7 +168,7 @@
 			</div>
 		</section>
 	</main>
-	<footer class="footer">
+	<footer class="footer" id="contacts">
 		<div class="container">
 			<div class="footer__main">
 				<div class="footer__item footer__left">
