@@ -3,8 +3,10 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="src/img/favicon.png">
 	<link rel="stylesheet" href="src/fonts/Inter/stylesheet.css">
 	<link rel="stylesheet" href="src/css/style.css">
+	<link rel="stylesheet" href="src/css/media.css">
 	<title>Resourse COFFE HOUSE</title>
 </head>
 <body>
@@ -45,6 +47,10 @@
 							<use xlink:href="src/img/sprite.svg#cup"></use>
 						</svg>
 					</a></div>
+					<div class="header__toggle nav-toggle">
+						<div class="nav-toggle__line nav-toggle__line--one"></div>
+						<div class="nav-toggle__line nav-toggle__line--two"></div>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -54,7 +60,7 @@
 			<div class="container">
 				<div class="hero">
 					<div class="hero__img">
-						<img src="src/img/hero.jpg" alt="">
+						<img src="src/img/hero.jpg" alt="Resourse COFFE HOUSE">
 					</div>
 					<div class="hero-main">
 						<div class="hero-main__offer">
@@ -94,7 +100,7 @@
 						</div>
 						<div class="favorite-coffee__main">
 							<div class="favorite-coffee__item">
-								<div class="favorite-coffee__img"><img src="src/img/slider/coffee-slider-1.png" alt=""></div>
+								<div class="favorite-coffee__img"><img src="src/img/slider/coffee-slider-1.png" alt="Slider 1"></div>
 								<h3 class="title h3 favorite-coffee__name">S’mores Frappuccino</h3>
 								<p class="text favorite-coffee__descr">This new drink takes an espresso and mixes it with brown sugar and cinnamon before being topped with oat milk.</p>
 								<h3 class="title h3 favorite-coffee__price">$5.50</h3>
@@ -116,18 +122,18 @@
 					<div class="about__main">
 						<div class="about__row">
 							<div class="about__item">
-								<div class="about__img"><img src="src/img/about/about-1.jpg" alt=""></div>
+								<div class="about__img"><img src="src/img/about/about-1.jpg" alt="img-1"></div>
 							</div>
-							<div class="about__item">
-								<div class="about__img about__img--small"><img src="src/img/about/about-2.jpg" alt=""></div>
+							<div class="about__item about__item--small">
+								<div class="about__img about__img--small"><img src="src/img/about/about-2.jpg" alt="img-2"></div>
 							</div>
 						</div>
 						<div class="about__row">
-							<div class="about__item">
-								<div class="about__img about__img--small"><img src="src/img/about/about-3.jpg" alt=""></div>
+							<div class="about__item about__item--small">
+								<div class="about__img about__img--small"><img src="src/img/about/about-3.jpg" alt="img-3"></div>
 							</div>
 							<div class="about__item">
-								<div class="about__img"><img src="src/img/about/about-4.jpg" alt=""></div>
+								<div class="about__img"><img src="src/img/about/about-4.jpg" alt="img-3"></div>
 							</div>
 						</div>
 					</div>
@@ -162,7 +168,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="download__img"><img src="src/img/mobile-screens.png" alt=""></div>
+						<div class="download__img"><img src="src/img/mobile-screens.png" alt="Phone"></div>
 					</div>
 				</div>
 			</div>
@@ -202,7 +208,7 @@
 						<p class="footer-contact__title title">Contact us</p>
 						<ul class="list-none footer-contact__list">
 							<li class="footer-contact__item">
-								<a href="#" class="footer-contact__link">
+								<a target="_blank" href="https://maps.app.goo.gl/xUj565KbS2uCdw798" class="footer-contact__link">
 									<svg class="svg-icon footer-contact__icon">
 										<use xlink:href="src/img/sprite.svg#local "></use>
 									</svg>
@@ -210,7 +216,7 @@
 								</a>
 							</li>
 							<li class="footer-contact__item">
-								<a href="#" class="footer-contact__link">
+								<a href="tel:+1603555-0123" class="footer-contact__link">
 									<svg class="svg-icon footer-contact__icon">
 										<use xlink:href="src/img/sprite.svg#phone"></use>
 									</svg>
@@ -218,12 +224,12 @@
 								</a>
 							</li>
 							<li class="footer-contact__item">
-								<a href="#" class="footer-contact__link">
+								<div class="footer-contact__link">
 									<svg class="svg-icon footer-contact__icon">
 										<use xlink:href="src/img/sprite.svg#clock"></use>
 									</svg>
 									Mon–Sat: 9:00–23:00
-								</a>
+								</div>
 							</li>
 						</ul>
 					</div>

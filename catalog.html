@@ -3,8 +3,10 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="src/img/favicon.png">
 	<link rel="stylesheet" href="src/fonts/Inter/stylesheet.css">
 	<link rel="stylesheet" href="src/css/style.css">
+	<link rel="stylesheet" href="src/css/media.css">
 	<title>Catalog COFFE HOUSE</title>
 </head>
 <body>
@@ -45,6 +47,10 @@
 							<use xlink:href="src/img/sprite.svg#cup"></use>
 						</svg>
 					</a></div>
+					<div class="header__toggle nav-toggle">
+						<div class="nav-toggle__line nav-toggle__line--one"></div>
+						<div class="nav-toggle__line nav-toggle__line--two"></div>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -52,7 +58,7 @@
 	<main class="main">
 		<div class="container">
 			<div class="catalog-page">
-				<h1 class="h1 title catalog-page__title">Behind each of our cups hides an <span class="accent">amazing surprise</span></h1>
+				<h1 class="h1 title catalog-page__title">Behind each of our cups hides an <span class="accent">amazing&nbsp;surprise</span></h1>
 				<div class="catalog-page__tabs catalog-tabs">
 					<ul class="catalog-tabs__nav catalog-nav list-none">
 						<li class="catalog-nav__item"><a href="#" class="catalog-nav__link active">Coffee <div class="catalog-nav__icon"><img  src="src/img/catalog/coffee.png" alt=""></div></a></li>
@@ -62,69 +68,92 @@
 					<div class="catalog-tabs__content catalog-content">
 						<div class="catalog-content__grid">
 							<div class="catalog-content__item">
-								<div class="catalog-content__img"><img src="src/img/catalog/coffee/coffee-1.jpg" alt=""></div>
+								<div class="catalog-content__img"><img src="src/img/catalog/coffee/coffee-1.jpg" alt="Irish coffee"></div>
 								<div class="catalog-content__main">
-									<p class="h3 title catalog-content__name">Irish coffee</p>
-									<p class="catalog-content__descr">Fragrant black coffee with <br> Jameson Irish whiskey and whipped milk</p>
-									<p class="catalog-content__price">$7.00</p>
+									<div class="catalog-content__flex">
+										<p class="h3 title catalog-content__name">Irish coffee</p>
+										<p class="catalog-content__descr">Fragrant black coffee with <br> Jameson Irish whiskey and whipped milk</p>
+										<p class="catalog-content__price">$7.00</p>
+									</div>
 								</div>
 							</div>
 							<div class="catalog-content__item">
-								<div class="catalog-content__img"><img src="src/img/catalog/coffee/coffee-2.jpg" alt=""></div>
+								<div class="catalog-content__img"><img src="src/img/catalog/coffee/coffee-2.jpg" alt="Kahlua coffee"></div>
 								<div class="catalog-content__main">
-									<p class="h3 title catalog-content__name">Kahlua coffee</p>
-									<p class="catalog-content__descr">Classic coffee with milk and Kahlua liqueur under a cap of frothed milk</p>
-									<p class="catalog-content__price">$7.00</p>
+									<div class="catalog-content__flex">
+										<p class="h3 title catalog-content__name">Kahlua coffee</p>
+										<p class="catalog-content__descr">Classic coffee with milk and Kahlua liqueur under a cap of frothed milk</p>
+										<p class="catalog-content__price">$7.00</p>
+									</div>
 								</div>
 							</div>
 							<div class="catalog-content__item">
-								<div class="catalog-content__img"><img src="src/img/catalog/coffee/coffee-3.jpg" alt=""></div>
+								<div class="catalog-content__img"><img src="src/img/catalog/coffee/coffee-3.jpg" alt="Honey raf"></div>
 								<div class="catalog-content__main">
-									<p class="h3 title catalog-content__name">Honey raf</p>
-									<p class="catalog-content__descr">Espresso with frothed milk, cream and aromatic honey</p>
-									<p class="catalog-content__price">$5.50</p>
+									<div class="catalog-content__flex">
+										<p class="h3 title catalog-content__name">Honey raf</p>
+										<p class="catalog-content__descr">Espresso with frothed milk, cream and aromatic honey</p>
+										<p class="catalog-content__price">$5.50</p>
+									</div>
 								</div>
 							</div>
 							<div class="catalog-content__item">
-								<div class="catalog-content__img"><img src="src/img/catalog/coffee/coffee-4.jpg" alt=""></div>
+								<div class="catalog-content__img"><img src="src/img/catalog/coffee/coffee-4.jpg" alt="Ice cappuccino"></div>
 								<div class="catalog-content__main">
-									<p class="h3 title catalog-content__name">Ice cappuccino</p>
-									<p class="catalog-content__descr">Cappuccino with soft thick foam in summer version with ice</p>
-									<p class="catalog-content__price">$5.00</p>
+									<div class="catalog-content__flex">
+										<p class="h3 title catalog-content__name">Ice cappuccino</p>
+										<p class="catalog-content__descr">Cappuccino with soft thick foam in summer version with ice</p>
+										<p class="catalog-content__price">$5.00</p>
+									</div>
 								</div>
 							</div>
 							<div class="catalog-content__item">
-								<div class="catalog-content__img"><img src="src/img/catalog/coffee/coffee-5.jpg" alt=""></div>
+								<div class="catalog-content__img"><img src="src/img/catalog/coffee/coffee-5.jpg" alt="Espresso"></div>
 								<div class="catalog-content__main">
-									<p class="h3 title catalog-content__name">Espresso</p>
-									<p class="catalog-content__descr">Classic black coffee</p>
-									<p class="catalog-content__price">$4.50</p>
+									<div class="catalog-content__flex">
+										<p class="h3 title catalog-content__name">Espresso</p>
+										<p class="catalog-content__descr">Classic black coffee</p>
+										<p class="catalog-content__price">$4.50</p>
+									</div>
 								</div>
 							</div>
 							<div class="catalog-content__item">
-								<div class="catalog-content__img"><img src="src/img/catalog/coffee/coffee-6.jpg" alt=""></div>
+								<div class="catalog-content__img"><img src="src/img/catalog/coffee/coffee-6.jpg" alt="Latte"></div>
 								<div class="catalog-content__main">
-									<p class="h3 title catalog-content__name">Latte</p>
-									<p class="catalog-content__descr">Espresso coffee with the addition of steamed milk and dense milk <br> foam</p>
-									<p class="catalog-content__price">$5.50</p>
+									<div class="catalog-content__flex">
+										<p class="h3 title catalog-content__name">Latte</p>
+										<p class="catalog-content__descr">Espresso coffee with the addition of steamed milk and dense milk <br> foam</p>
+										<p class="catalog-content__price">$5.50</p>
+									</div>
 								</div>
 							</div>
 							<div class="catalog-content__item">
-								<div class="catalog-content__img"><img src="src/img/catalog/coffee/coffee-7.jpg" alt=""></div>
+								<div class="catalog-content__img"><img src="src/img/catalog/coffee/coffee-7.jpg" alt="Latte macchiato"></div>
 								<div class="catalog-content__main">
-									<p class="h3 title catalog-content__name">Latte macchiato</p>
-									<p class="catalog-content__descr">Espresso with frothed milk and chocolate</p>
-									<p class="catalog-content__price">$5.50</p>
+									<div class="catalog-content__flex">
+										<p class="h3 title catalog-content__name">Latte macchiato</p>
+										<p class="catalog-content__descr">Espresso with frothed milk and chocolate</p>
+										<p class="catalog-content__price">$5.50</p>
+									</div>
 								</div>
 							</div> 
 							<div class="catalog-content__item">
-								<div class="catalog-content__img"><img src="src/img/catalog/coffee/coffee-8.jpg" alt=""></div>
+								<div class="catalog-content__img"><img src="src/img/catalog/coffee/coffee-8.jpg" alt="Coffee with cognac"></div>
 								<div class="catalog-content__main">
-									<p class="h3 title catalog-content__name">Coffee with cognac</p>
-									<p class="catalog-content__descr">Fragrant black coffee with cognac and whipped cream</p>
-									<p class="catalog-content__price">$6.50</p>
+									<div class="catalog-content__flex">
+										<p class="h3 title catalog-content__name">Coffee with cognac</p>
+										<p class="catalog-content__descr">Fragrant black coffee with cognac and whipped cream</p>
+										<p class="catalog-content__price">$6.50</p>
+									</div>
 								</div>
 							</div>
+						</div>
+					</div>
+					<div class="catalog-content__refresh catalog-refresh">
+						<div class="catalog-refresh__icon">
+							<svg class="svg-icon">
+								<use xlink:href="src/img/sprite.svg#refresh"></use>
+							</svg>
 						</div>
 					</div>
 				</div>
@@ -165,7 +194,7 @@
 						<p class="footer-contact__title title">Contact us</p>
 						<ul class="list-none footer-contact__list">
 							<li class="footer-contact__item">
-								<a href="#" class="footer-contact__link">
+								<a target="_blank" href="https://maps.app.goo.gl/xUj565KbS2uCdw798" class="footer-contact__link">
 									<svg class="svg-icon footer-contact__icon">
 										<use xlink:href="src/img/sprite.svg#local "></use>
 									</svg>
@@ -173,7 +202,7 @@
 								</a>
 							</li>
 							<li class="footer-contact__item">
-								<a href="#" class="footer-contact__link">
+								<a href="tel: +1603555-0123" class="footer-contact__link">
 									<svg class="svg-icon footer-contact__icon">
 										<use xlink:href="src/img/sprite.svg#phone"></use>
 									</svg>
@@ -181,12 +210,12 @@
 								</a>
 							</li>
 							<li class="footer-contact__item">
-								<a href="#" class="footer-contact__link">
+								<div class="footer-contact__link">
 									<svg class="svg-icon footer-contact__icon">
 										<use xlink:href="src/img/sprite.svg#clock"></use>
 									</svg>
 									Mon–Sat: 9:00–23:00
-								</a>
+								</div>
 							</li>
 						</ul>
 					</div>
